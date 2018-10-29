@@ -1,0 +1,46 @@
+/*carousel의 기본 크기 및 margin 설정*/
+.bxslider-wrapper {
+    width: 40em;
+    margin: 0 auto;
+}
+
+/*모바일 환경에서 보여지는 상단 드롭다운 버튼의 위치 오른쪽으로 설정*/
+.dropdown {
+    float: right;
+}
+
+/*PC환경(와이드)일 시 carousel 감추기*/
+@media (min-width: 856px) {
+    .bxslider {
+        display: none;
+    }
+}
+
+/*모바일 환경일 시 parallax에 사용되는 한 구간 감추기*/
+@media (max-width: 855px) {
+    .uphead-parallax {
+        display: none;
+    }
+}
+
+/*PC환경(와이드)일 시 드롭다운 버튼 감추기*/
+@media (min-width: 601px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+/*모바일 좌우 폭에 따라 carousel 크기 변경 (중간)*/
+@media (max-width: 570px) {
+    .bxslider-wrapper {
+        width: 30em;
+    }
+    
+}
+
+/*모바일 좌우 폭에 따라 carousel 크기 변경 (작음)*/
+@media (max-width: 430px) {
+    .bxslider-wrapper {
+        width: 20em;
+    }
+}
